@@ -48,29 +48,34 @@ table {
 }
 
 html *{
-    border:2px solid red;
+    
 }
 
 body{
     display: grid;
-    grid-template-columns: 75vw 25vw;
+    grid-template-columns: 70vw 30vw;
     grid-template-areas:
      "nav nav"
      "content aside";
+     
 }
 nav{
     padding: 0 2rem 0 2rem;
-    height:4rem;
-    margin: 0.5rem 0 2rem 0;
+    height:3.5rem;
+    margin: 0.5rem 0 1rem 0;
     grid-area: nav;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    position: sticky;
+    background-color: white;
 }
 
 .content{
     height:80vh;
     grid-area: content;
+    padding: 0 2rem 0 2rem;
 }
 
 aside{
@@ -78,8 +83,8 @@ aside{
 }
 
 nav img{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
@@ -108,3 +113,140 @@ nav .profile{
     gap: 2rem;
 }
 
+.content .video{
+    height: 60vh;
+    margin-bottom: 2rem;
+}
+
+.content .vid_pfp img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.content .stats h4{
+    color:blue;
+}
+
+.content .stats h3{
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.content .desc_stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.content .desc_stats .vid_buttons{
+    display: flex;
+    gap:2rem;
+}
+
+.content .desc_stats .vid_buttons button{
+    border:none;
+}
+
+.content .stats .vid_desc{
+    padding-top: 1rem;
+}
+
+.content .stats .vid_desc .vid_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.content .stats .vid_desc .vid_profile .vid_pfp{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.content .stats .vid_desc .vid_profile .vid_pfp .vid_pfp_stats a{
+    text-decoration: none;
+}
+
+.content .stats .vid_desc .vid_profile #sub{
+    background-color: red;
+    color:white;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.content .stats .vid_desc .vid_desc_long{
+    padding-left: 4rem;
+}
+.content .stats .vid_desc .vid_desc_long button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.content .stats .vid_desc{
+    border-bottom: 2px solid black;
+}
+
+.content .comment_section .comment_controlls{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.content .comment_section .comment_controlls .com_count{
+    display: inline;
+}
+.content .comment_section .comment_controlls i{
+    margin-left: 2rem;
+}
+
+.content .comment_section .comment_controlls .add_com{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.content .comment_section .comment_controlls .add_com img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.content .comment_section .comment_controlls .add_com input{
+    border:none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.content .comment_section .comments{
+    display: flex;
+    flex-direction: column;
+}
+
+.content .comment_section .comments .user_comment{
+    display: flex;
+}
+
+.content .comment_section .comments .user_comment .user_com_pfp{
+    margin-right: 2rem;
+}
+
+.content .comment_section .comments .user_comment img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.content .comment_section .comments .user_comment h5{
+    margin-bottom: 0.5rem;
+}
+
+.content .comment_section .comments .user_comment p{
+    margin-bottom: 1rem;
+}
+
+.content .comment_section .comments .user_comment .user_comment_controlls button{
+    border:none;
+}
